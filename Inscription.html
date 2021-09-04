@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/formStyle.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+ 
+    <!-- links -->
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./images/logo.png" alt="" width="300px">
+    </div>
+    <div class="title-section text-center">
+        <h1>Inscription Pour lycée / Collége <br>&nbsp&nbsp&nbsp&nbsp&nbsp التسجيل بالنسبة للتعليم الاعدادي و الثانوي</h1>
+    </div>
+    <form method="post" style="border: 2px solid black;padding:50px 150px;">
+      <div >
+      <!-- Nom -->
+      <div >
+          <label >Nom et prénom &nbsp:</label>  
+          <input type="text">
+          <label class="arabe">: الإسم الكامل</label>  
+        </div>
+       
+       <!-- Niveau scolaire -->
+        <div>
+            <label >Niveau Scolaire&nbsp:</label>  
+            <input type="text">
+            <label class="arabe"> : المستوى الدراسي</label>
+          </div>
+        
+        
+          <div class="form-group filiere" >
+            <label>Filiére:</label>  
+            <input type="text">
+            <label class="arabe"> :الشعبة </label>
+          </div>
+        </div>
+          <!-- A distance Presenciel -->
+
+         
+          <div class="mt-5">
+            <label >A distance:</label>  
+            <input type="checkbox" value="adistance" name="choix" onclick="myFun(this)">
+            <label class="arabe"> : عن بعد </label>
+            <br>
+            <div class="presentiel">
+              <label >Présentiel:</label>  
+            <input type="checkbox" value="presentiel" name="choix" onclick="myFun(this)">
+            <label class="arabe"> :  حضوري  </label>
+            </div>
+          </div>
+         
+
+          <!-- Matiere -->
+          <br>
+          <h2 class="text-center my-5">Matiére &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspالمواد</h2>
+         <br>
+          <div class="math">
+            <label >Mathématique:</label>  
+            <input type="checkbox">
+            <label class="arabe"> : الرياضيات </label>
+          </div>  
+          <div class="phy">
+            <label >Physique et Chimie :</label> 
+            <input type="checkbox" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="arabe">: الفيزياء و الكيمياء </label>
+          </div>
+         
+          
+          <!-- Groupes --> 
+          <br>
+          <h2 class="text-center my-5">Groupes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspمجموعات</h2>
+          <br>
+          <div ><br>
+            <div>
+              <label >Groupe Ouvert :</label>  
+            <input type="checkbox" value="groupe_ouvert" name="groupe" onclick="myFun(this)">
+            <label class="arabe" >: مجموعات عامة </label>
+            </div>
+            <div class="prv">
+              <label >Groupe fermé :</label>  
+            <input type="checkbox" value="groupe_ferme" name="groupe" onclick="myFun(this)">
+            <label class="arabe">: مجموعات خاصة</label>
+            </div>
+          </div>  
+          <br><br>
+          <div class="mt-5">
+            <label>TEL :</label>  
+            <input type="text">
+            <label class="arabe"> :  الهاتف </label>
+          </div>
+        
+        <button class="btn btn-primary mt-5">Confirmer</button>
+
+          <!-- Tel -->
+    </form>
+   
+
+
+
+    <!-- js links -->
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      function myFun(checkbox) {
+        var checkboxes = document.getElementsByName('groupe')
+        checkboxes.forEach((item) => {
+          if (item !== checkbox) item.checked =  false
+        })
+        var choixboxes = document.getElementsByName('choix')
+        choixboxes.forEach((item) => {
+          if (item !== checkbox) item.checked =  false
+        })
+      }
+    </script>
+   
+</body>
+</html>

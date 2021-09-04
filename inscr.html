@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- links -->
+     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./css/formStyle.css">
+     <link href="css/font-awesome.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./images/logo.png" alt="" width="300px">
+    </div>
+    <div class="title-section">
+        <h1>Inscription Pour lycée / Collége <br>&nbsp&nbsp&nbsp&nbsp&nbsp التسجيل بالنسبة للتعليم الاعدادي و الثانوي</h1>
+    </div>
+    <form method="post" style="border: 2px solid black;padding:50px 150px;">
+      <!-- Nom -->
+      <div >
+          <label >Nom et prénom &nbsp:</label>  
+          <input type="text">
+          <label >: الإسم الكامل</label>  
+        </div>
+       
+       <!-- Niveau scolaire -->
+        <div>
+            <label >Niveau Scolaire&nbsp:</label>  
+            <input type="text">
+            <label > : المستوى الدراسي</label>
+          </div>
+        
+        
+          <div class="form-group" style="margin-left: 92px;">
+            <label>Filiére:</label>  
+            <input type="text">
+            <label > :الشعبة </label>
+          </div>
+
+          <!-- A distance Presenciel -->
+
+          <div style="display: flex;flex-direction: column;align-items: center;">
+            <div>
+                <label >A distance:</label>  
+                <input type="checkbox" value="adistance" name="choix" onclick="myFun(this)">
+                <label > : عن بعد </label>
+                </div>
+                <div>
+                <label >Présentiel:</label>  
+                <input type="checkbox" value="presentiel" name="choix" onclick="myFun(this)">
+                <label > :  حضوري  </label>
+              </div> 
+          
+          <!--  Matiere -->
+          <h2 class="text-center">Matiére &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspالمواد</h2>
+          
+            <div><br>
+                <label >Mathématique:</label>  
+                <input type="checkbox">
+                <label > : الرياضيات </label>
+              </div>  
+              <div >
+                <label >Physique et Chimie :</label> 
+                <input type="checkbox" >
+                <label >: الفيزياء و الكيمياء </label>
+              </div>
+          
+          
+
+          <h2 class="text-center">Groupes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspمجموعات</h2>
+          <div ><br>
+            <label >Groupe Ouvert :</label>  
+            <input type="checkbox" value="groupe_ouvert" name="groupe" onclick="myFun(this)">
+            <label >: مجموعات عامة </label>
+            <br>
+            <label >Groupe fermé :</label>  
+            <input type="checkbox" value="groupe_ferme" name="groupe" onclick="myFun(this)">
+            <label >: مجموعات خاصة</label>
+          </div>  
+          <div >
+            <label>TEL :</label>  
+            <input type="text">
+            <label > :  الهاتف </label>
+          </div>
+        </div>
+        <button class="btn btn-primary" style="margin-left: 150px;width: 250px;margin-top: 50px;">Confirmer</button>
+
+          <!-- Tel -->
+    </form>
+   
+
+
+
+    <!-- js links -->
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      function myFun(checkbox) {
+        var checkboxes = document.getElementsByName('groupe')
+        checkboxes.forEach((item) => {
+          if (item !== checkbox) item.checked =  false
+        })
+        var choixboxes = document.getElementsByName('choix')
+        choixboxes.forEach((item) => {
+          if (item !== checkbox) item.checked =  false
+        })
+      }
+    </script>
+   
+</body>
+</html>

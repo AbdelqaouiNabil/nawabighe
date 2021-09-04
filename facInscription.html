@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/FaculteformStyle.css">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    
+ 
+    <!-- links -->
+    <title>Inscription</title>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./images/logo.png" alt="" width="300px" >
+    </div>
+    <div class="title-section text-center">
+        <h1>Inscription Pour Facultée <br>&nbsp&nbsp&nbsp&nbsp&nbsp التسجيل بالنسبة للتعليم الجامعي</h1>
+    </div>
+    <form method="post" style="border: 2px solid black;padding:50px 150px;">
+      
+      <!-- Nom -->
+      <div >
+          <label >Nom et prénom &nbsp:</label>  
+          <input type="text" name="nomEtPrenom">
+          <label class="arabe">: الإسم الكامل</label>  
+        </div>
+       
+        <div class="form-group filiere" >
+            <label>Filiére:</label>  
+            <input type="text" name="filiere" >
+            <label class="arabe"> :الشعبة </label>
+          </div>
+        
+          <!-- A distance Presenciel -->
+
+        
+          <div class="mt-5">
+            <label >A distance:</label>  
+            <input type="checkbox" value="adistance" name="choix" onclick="myFun(this)">
+            <label class="arabe"> : عن بعد </label>
+            <br>
+            <div style="margin-left: 5px;">
+              <label >Présentiel:</label>  
+            <input type="checkbox" value="presentiel" name="choix" onclick="myFun(this)">
+            <label class="arabe"> :  حضوري  </label>
+            </div>
+          </div>
+        
+ 
+          <!-- Matiere -->
+          <br>
+          <h2 class="text-center my-5">Semestres &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspالسداسيات</h2>
+         <br>
+          <div >
+            <label >S1 :</label>  
+            <input type="checkbox"  name="semestre" id="s1">
+            <label >S2 :</label>  
+            <input type="checkbox"  name="semestre" id="s2">
+            <label >S3 :</label>  
+            <input type="checkbox"  name="semestre" id="s3">
+            <label >S4 :</label>  
+            <input type="checkbox" name="semestre" id="s4">
+            <label >S5 :</label>  
+            <input type="checkbox"  name="semestre" id="s5">
+            <label >S6 :</label>  
+            <input type="checkbox"  name="semestre" id="s6">
+            <label >INFORMATIQUE :</label>  
+            <input type="checkbox"  name="semestre" id="info">
+          </div>  
+           <div class="modules">
+             <div class="s1 text-center">
+               <h3 class="text-center">s1</h3>
+               <label>Thermodynamique1</label>
+               <input type="checkbox" value="m1">
+               <label>Atomistique</label>
+               <input type="checkbox" value="m1">
+               <label>Mécanique de point</label>
+               <input type="checkbox" value="m1">
+               <label>Thermochimie</label>
+               <input type="checkbox" value="m1">
+               <label>Algèbre 1</label>
+               <input type="checkbox" value="m1">
+             </div>
+             <div class="s2 text-center">
+               <h3 class="text-center">s2</h3>
+              <label>m1</label>
+              <input type="checkbox" value="m1">
+              <label>m2</label>
+              <input type="checkbox" value="m1">
+              <label>m3</label>
+              <input type="checkbox" value="m1">
+              <label>m4</label>
+              <input type="checkbox" value="m1">
+              <label>m5</label>
+              <input type="checkbox" value="m1">
+            </div>
+            <div class="s3 text-center">
+              <h3 class="text-center">s3</h3>
+              <label>m1</label>
+              <input type="checkbox" value="m1">
+              <label>m2</label>
+              <input type="checkbox" value="m1">
+              <label>m3</label>
+              <input type="checkbox" value="m1">
+              <label>m4</label>
+              <input type="checkbox" value="m1">
+              <label>m5</label>
+              <input type="checkbox" value="m1">
+            </div>
+            <div class="s4 text-center">
+              <h3 class="text-center">s4</h3>
+              <label>m1</label>
+              <input type="checkbox" value="m1">
+              <label>m2</label>
+              <input type="checkbox" value="m1">
+              <label>m3</label>
+              <input type="checkbox" value="m1">
+              <label>m4</label>
+              <input type="checkbox" value="m1">
+              <label>m5</label>
+              <input type="checkbox" value="m1">
+            </div>
+            <div class="s5 text-center">
+              <h3 class="text-center">s5</h3>
+              <label>m1</label>
+              <input type="checkbox" value="m1">
+              <label>m2</label>
+              <input type="checkbox" value="m1">
+              <label>m3</label>
+              <input type="checkbox" value="m1">
+              <label>m4</label>
+              <input type="checkbox" value="m1">
+              <label>m5</label>
+              <input type="checkbox" value="m1">
+            </div>
+            <div class="s6 text-center">
+              <h3 class="text-center">s6</h3>
+              <label>m1</label>
+              <input type="checkbox" value="m1">
+              <label>m2</label>
+              <input type="checkbox" value="m1">
+              <label>m3</label>
+              <input type="checkbox" value="m1">
+              <label>m4</label>
+              <input type="checkbox" value="m1">
+              <label>m5</label>
+              <input type="checkbox" value="m1">
+            </div>
+            <div class="info text-center">
+              <h3 class="text-center">Informatique</h3>
+              <label>m1</label>
+              <input type="checkbox" value="m1">
+              <label>m2</label>
+              <input type="checkbox" value="m1">
+              <label>m3</label>
+              <input type="checkbox" value="m1">
+              <label>m4</label>
+              <input type="checkbox" value="m1">
+              <label>m5</label>
+              <input type="checkbox" value="m1">
+            </div>
+           </div>
+         
+          
+          <!-- Groupes --> 
+          <br>
+          <br>
+          <h2 class="text-center mt-5">Groupes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspمجموعات</h2>
+          <br>
+          <div><br>
+            <div>
+              <label >Groupe Ouvert :</label>  
+            <input type="checkbox" value="groupe_ouvert" name="groupe" onclick="myFun(this)">
+            <label class="arabe" >: مجموعات عامة </label>
+            </div>
+            <div style="margin-left: 8px;">
+              <label >Groupe fermé :</label>  
+            <input type="checkbox" value="groupe_ferme" name="groupe" onclick="myFun(this)">
+            <label class="arabe">: مجموعات خاصة</label>
+            </div>
+          </div>  
+          <br><br>
+          <div class="mt-5">
+            <label>TEL :</label>  
+            <input type="text">
+            <label class="arabe"> :  الهاتف </label>
+          </div>
+        <button class="btn btn-primary mt-5">Confirmer</button>
+
+          <!-- Tel -->
+    </form>
+   
+
+
+
+    <!-- js links -->
+    
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $('#s1').change(function(){
+    if($(this).is(":checked")) {
+        $('.s1').toggle('toggle');
+    } else{
+      $('.s1').toggle('toggle');
+    }
+         });
+
+         $('#s2').change(function(){
+    if($(this).is(":checked")) {
+        $('.s2').toggle('toggle');
+    } else{
+      $('.s2').toggle('toggle');
+    }
+         });
+
+         $('#s3').change(function(){
+    if($(this).is(":checked")) {
+        $('.s3').toggle('toggle');
+    } else{
+      $('.s3').toggle('toggle');
+    }
+         });
+
+         $('#s4').change(function(){
+    if($(this).is(":checked")) {
+        $('.s4').toggle('toggle');
+    } else{
+      $('.s4').toggle('toggle');
+    }
+         });
+
+         $('#s5').change(function(){
+    if($(this).is(":checked")) {
+        $('.s5').toggle('toggle');
+    } else{
+      $('.s5').toggle('toggle');
+    }
+         });
+
+         $('#s6').change(function(){
+    if($(this).is(":checked")) {
+        $('.s6').toggle('toggle');
+    } else{
+      $('.s6').toggle('toggle');
+    }
+         });
+         $('#info').change(function(){
+    if($(this).is(":checked")) {
+        $('.info').toggle('toggle');
+    } else{
+      $('.info').toggle('toggle');
+    }
+         });
+    </script>
+   
+</body>
+</html>
